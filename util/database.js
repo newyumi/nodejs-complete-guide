@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
 
@@ -5,7 +7,7 @@ let _db;
 
 const mongoConnect = callback => {
   MongoClient.connect(
-    'mongodb+srv://rachel:<password>@cluster0.dcmom.mongodb.net/shop?retryWrites=true&w=majority',
+    process.env.DATABASE_URL,
     { useUnifiedTopology: true }
   )
     .then(client => {

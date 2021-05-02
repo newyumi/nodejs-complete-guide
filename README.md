@@ -9,3 +9,6 @@ Open mongodb cloud account and connect with yours.
 
 ### mongodb compass
 <img src="mongodb_compass.png" width="500"/>
+
+### mongodb shell methods docs
+https://docs.mongodb.com/manual/reference/method/js-collection/

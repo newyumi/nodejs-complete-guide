@@ -8,7 +8,7 @@ let _db;
 const mongoConnect = callback => {
   MongoClient.connect(
     process.env.DATABASE_URL,
-    { useUnifiedTopology: true }
+    { useUnifiedTopology: true } // Enables the new unified topology layer
   )
     .then(client => {
       console.log('Connected!');
